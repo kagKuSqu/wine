@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+	</head>
+	<link rel="stylesheet" type="text/css" href="css/from.css"/>
+	<body>
+		<div class="web">
+			<section>
+				<h3>填写囍宴主人信息</h3>
+				<form>
+					<div>
+						<label for="name">真实姓名</label>
+						<input type="text" id="name" />
+					</div>
+					<div>
+						<label for="tel">联系电话</label>
+						<input type="text" id="tel" />
+					</div>
+					<div>
+						<label for="address">囍宴举办地点</label>
+						<input type="text" id="address" />
+					</div>
+					<div>
+						<label for="data">囍宴举办日期</label>
+						<input type="text" id="data" />
+					</div>
+					<p>只有于2016年1月1日后进行婚姻登记</p>
+					<p>并在2016年10月1日--10月7日举办婚宴的新人</p>
+					<p>(限广东省、海南省区域)才能入榜噢!</p>
+					<input type="button" value="" id="btn"/>
+				</form>
+				<div class="motai">
+					<div class="box" >
+						<h6>提交成功!</h6>
+						<button  onclick="window.location.href='list.html'">查看我的排名</button>
+						<input type="button" name="" id="close" value=""/>
+					</div>
+				</div>
+				<a href="index.html">
+				</a>
+			</section>
+	</body>
+	<script src="js/getFont.js"></script>
+	<script type="text/javascript">
+			var oBtn=document.getElementById('btn');
+			oBtn.onclick=function(){
+				motai('.motai','close');
+			};
+		
+			function motai(mo,close){
+				var oMotai=document.querySelector(mo);
+				var oBox=oMotai.querySelector('.box');
+				var oBtn_close=document.getElementById(close);
+				console.log(oMotai)
+					oMotai.classList.add('transition');
+					setTimeout(function(){
+						oBox.classList.add('box_tran');
+					},500);
+					
+				oBtn_close.onclick=function(){
+					oMotai.classList.remove('transition');
+					oBox.classList.remove('box_tran');
+				};	
+		}
+	</script>
+</html>
+

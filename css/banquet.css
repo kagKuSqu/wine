@@ -1,0 +1,347 @@
+@charset "UTF-8";
+/*RESET重置样式*/
+body, p, ul, ol, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, form, fieldset, legend, input, select, textarea, button, th, td, menu {
+  margin: 0;
+  padding: 0; }
+
+/**{box-sizing:border-box}*/
+ul, dl, ol {
+  list-style: none; }
+
+img, fieldset, input[type="submit"] {
+  border: 0 none; }
+
+em {
+  font-style: normal; }
+
+strong {
+  font-weight: normal; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+button, input[type="button"] {
+  cursor: pointer;
+  border: 0 none; }
+
+a, button, input, img {
+  -webkit-touch-callout: none; }
+
+img {
+  /*pointer-events:none;*/
+  /*禁止图片的点击事件，例如长按保存图片*/ }
+
+input, select, textarea {
+  outline: none; }
+
+a {
+  text-decoration: none; }
+
+.fl {
+  float: left; }
+
+.fr {
+  float: right; }
+
+.clear {
+  clear: both; }
+
+.clearfix {
+  zoom: 1; }
+
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both; }
+
+html, body {
+  /*禁止用户选择元素*/
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -khtml-user-select: none;
+  /*禁止元素点击出现半透明黑色背景*/
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+
+html {
+  height: 100%;
+  width: 100%;
+  font-family: 'Heiti SC', 'Microsoft YaHei';
+  outline: 0;
+  -webkit-text-size-adjust: none; }
+
+body {
+  height: 100%;
+  margin: 0;
+  position: relative; }
+
+html, body {
+  width: 100%;
+  height: 100%;
+  background: #bf0c21; }
+
+.web {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background: url(../img/background.png) repeat;
+  background-size: 8rem 12.6rem; }
+
+button {
+  outline: none; }
+
+.web {
+  overflow: hidden; }
+  .web h3 {
+    font-size: 0.4rem;
+    color: #e7c598;
+    text-align: center;
+    margin-top: 0.325rem; }
+  .web .other {
+    font-size: 0.325rem;
+    color: #e7c598;
+    text-align: center;
+    margin-top: 1.075rem; }
+    .web .other .other_num {
+      display: inline-block;
+      height: 0.5rem;
+      width: 0.5rem;
+      font-size: 0.4rem;
+      color: orange;
+      border-bottom: 0.0125rem solid #e7c598; }
+
+section {
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  overflow-y: scroll;
+  background: url(../img/background.png) repeat;
+  background-size: 8rem 12.6rem;
+  z-index: 2; }
+  section input {
+    width: 3.975rem;
+    height: 0.5625rem;
+    background: url(../img/conq.png) no-repeat;
+    background-size: 3.975rem 0.5625rem;
+    display: block;
+    margin: 1rem auto 0.25rem; }
+  section a {
+    display: block;
+    width: 0.5125rem;
+    height: 0.5125rem;
+    position: fixed;
+    bottom: 0.375rem;
+    right: 0.375rem;
+    background: url(../img/btnreturn.png) no-repeat;
+    background-size: 0.5125rem 0.5125rem; }
+
+.seat {
+  width: 4.875rem;
+  margin: 0 auto; }
+  .seat .table {
+    transition: all 300ms;
+    transform: scale(1) translateY(0%); }
+  .seat .owner .table {
+    margin: 1.125rem auto 0;
+    width: 1.525rem;
+    height: 1.525rem;
+    border-radius: 50%;
+    background: #e7c598;
+    position: relative;
+    text-align: center;
+    line-height: 1.525rem;
+    font-size: 0.275rem;
+    color: #bf0c21;
+    box-shadow: 0.025rem 0.0125rem #000000; }
+    .seat .owner .table ul li {
+      width: 0.6rem;
+      height: 0.6rem;
+      border-radius: 50%;
+      background: url(../img/person.jpg) no-repeat;
+      overflow: hidden;
+      background-size: 100% 100%;
+      position: absolute;
+      box-shadow: 0.025rem 0.0125rem #000000; }
+      .seat .owner .table ul li:nth-of-type(1) {
+        top: -0.7rem;
+        left: 0.475rem; }
+      .seat .owner .table ul li:nth-of-type(2) {
+        top: -0.125rem;
+        left: -0.5625rem; }
+      .seat .owner .table ul li:nth-of-type(3) {
+        top: 1.05rem;
+        left: -0.5625rem; }
+      .seat .owner .table ul li:nth-of-type(4) {
+        bottom: -0.7rem;
+        left: 0.475rem; }
+      .seat .owner .table ul li:nth-of-type(6) {
+        top: -0.125rem;
+        right: -0.5625rem; }
+      .seat .owner .table ul li:nth-of-type(5) {
+        top: 1.05rem;
+        right: -0.5625rem; }
+  .seat .person {
+    width: 50%;
+    float: left; }
+    .seat .person .table {
+      margin: 1.375rem auto 0;
+      width: 1.075rem;
+      height: 1.075rem;
+      border-radius: 50%;
+      background: #e7c598;
+      position: relative;
+      text-align: center;
+      line-height: 1.075rem;
+      font-size: 0.225rem;
+      color: #bf0c21;
+      box-shadow: 0.025rem 0.0125rem #000000; }
+      .seat .person .table ul li {
+        width: 0.4375rem;
+        height: 0.4375rem;
+        border-radius: 50%;
+        background: url(../img/person.jpg) no-repeat;
+        overflow: hidden;
+        background-size: 100% 100%;
+        position: absolute;
+        box-shadow: 0.025rem 0.0125rem #000000; }
+        .seat .person .table ul li:nth-of-type(1) {
+          top: -0.525rem;
+          left: 0.325rem; }
+        .seat .person .table ul li:nth-of-type(2) {
+          top: -0.1rem;
+          left: -0.4125rem; }
+        .seat .person .table ul li:nth-of-type(3) {
+          top: 0.75rem;
+          left: -0.4125rem; }
+        .seat .person .table ul li:nth-of-type(4) {
+          bottom: -0.525rem;
+          left: 0.325rem; }
+        .seat .person .table ul li:nth-of-type(6) {
+          top: -0.1rem;
+          right: -0.4125rem; }
+        .seat .person .table ul li:nth-of-type(5) {
+          top: 0.75rem;
+          right: -0.4125rem; }
+    .seat .person .add {
+      background: url(../img/add.jpg) no-repeat;
+      background-size: 100%; }
+
+.motai, .motai2, .motai3 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translateX(-100%);
+  background: rgba(106, 0, 1, 0.8);
+  z-index: 1;
+  transition: 200ms; }
+  .motai .box, .motai2 .box, .motai3 .box {
+    width: 5.1625rem;
+    height: 3.125rem;
+    background: #e7c598;
+    border-radius: 0.15rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    transition: 300ms;
+    transform: translateY(-300%); }
+    .motai .box p, .motai2 .box p, .motai3 .box p {
+      font-size: 0.375rem;
+      color: #bf0c21;
+      text-align: center;
+      line-height: 0.5625rem; }
+      .motai .box p:nth-child(1), .motai2 .box p:nth-child(1), .motai3 .box p:nth-child(1) {
+        margin-top: 1rem; }
+    .motai .box h6, .motai2 .box h6, .motai3 .box h6 {
+      font-size: 0.375rem;
+      color: #bf0c21;
+      text-align: center;
+      line-height: 0.5625rem;
+      margin-top: 0.325rem; }
+    .motai .box button, .motai2 .box button, .motai3 .box button {
+      display: block;
+      margin: 0.175rem auto 0;
+      width: 2.8rem;
+      height: 0.5rem;
+      color: #e7c598;
+      font-size: 0.275rem;
+      text-align: center;
+      line-height: 0.5rem;
+      background: #bf0c21;
+      border-radius: 0.125rem; }
+    .motai .box .friend, .motai2 .box .friend, .motai3 .box .friend {
+      width: 3.75rem; }
+    .motai .box input:last-of-type, .motai2 .box input:last-of-type, .motai3 .box input:last-of-type {
+      width: 0.45rem;
+      height: 0.45rem;
+      border-radius: 50%;
+      position: absolute;
+      right: 0.2rem;
+      top: 0.15rem;
+      background: url(../img/btnclose.png) no-repeat;
+      background-size: 0.45rem 0.45rem; }
+
+.motai2 .click {
+  width: 100%;
+  height: 100%;
+  background: transparent; }
+.motai2 .info {
+  width: 100%;
+  position: absolute;
+  bottom: 1.25rem; }
+.motai2 h4 {
+  font-size: 0.325rem;
+  color: #e7c598;
+  text-align: center; }
+  .motai2 h4 .other_num {
+    display: inline-block;
+    padding: 0.225rem;
+    padding-bottom: 0;
+    font-size: 0.4rem;
+    color: orange;
+    border-bottom: 0.025rem solid #e7c598; }
+.motai2 a {
+  display: block;
+  width: 0.5125rem;
+  height: 0.5125rem;
+  position: fixed;
+  bottom: 0.375rem;
+  right: 0.375rem;
+  background: url(../img/btnreturn.png) no-repeat;
+  background-size: 0.5125rem 0.5125rem; }
+
+.motai3 .box h6 {
+  font-size: 0.45rem;
+  line-height: 1.25rem; }
+.motai3 .box button {
+  height: 0.85rem;
+  line-height: 0.375rem; }
+
+.transition {
+  transform: translateX(0%);
+  z-index: 3; }
+  .transition .box_tran {
+    transform: translateY(0%); }
+
+.seat .toBig1 {
+  transform: scale(2.2); }
+
+.seat .toBig {
+  transform: scale(2.8); }
+
+.seat .toAuto {
+  float: none;
+  margin: 5rem auto 0; }
+
+.sec {
+  z-index: 998;
+  background: none; }
+
+/*# sourceMappingURL=banquet.css.map */

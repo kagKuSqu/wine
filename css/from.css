@@ -1,0 +1,219 @@
+@charset "UTF-8";
+/*RESET重置样式*/
+body, p, ul, ol, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, form, fieldset, legend, input, select, textarea, button, th, td, menu {
+  margin: 0;
+  padding: 0; }
+
+/**{box-sizing:border-box}*/
+ul, dl, ol {
+  list-style: none; }
+
+img, fieldset, input[type="submit"] {
+  border: 0 none; }
+
+em {
+  font-style: normal; }
+
+strong {
+  font-weight: normal; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+button, input[type="button"] {
+  cursor: pointer;
+  border: 0 none; }
+
+a, button, input, img {
+  -webkit-touch-callout: none; }
+
+img {
+  /*pointer-events:none;*/
+  /*禁止图片的点击事件，例如长按保存图片*/ }
+
+input, select, textarea {
+  outline: none; }
+
+a {
+  text-decoration: none; }
+
+.fl {
+  float: left; }
+
+.fr {
+  float: right; }
+
+.clear {
+  clear: both; }
+
+.clearfix {
+  zoom: 1; }
+
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both; }
+
+html, body {
+  /*禁止用户选择元素*/
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -khtml-user-select: none;
+  /*禁止元素点击出现半透明黑色背景*/
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+
+html {
+  height: 100%;
+  width: 100%;
+  font-family: 'Heiti SC', 'Microsoft YaHei';
+  outline: 0;
+  -webkit-text-size-adjust: none; }
+
+body {
+  height: 100%;
+  margin: 0;
+  position: relative; }
+
+html, body {
+  width: 100%;
+  height: 100%;
+  background: #bf0c21; }
+
+.web {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background: url(../img/background.png) repeat;
+  background-size: 8rem 12.6rem; }
+
+button {
+  outline: none; }
+
+.web {
+  overflow: hidden; }
+
+section {
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  overflow-y: scroll;
+  background: url(../img/background.png) repeat;
+  background-size: 8rem 12.6rem; }
+  section h3 {
+    font-size: 0.4rem;
+    color: #e7c598;
+    text-align: center;
+    margin-top: 3.25rem;
+    margin-bottom: 0.5rem; }
+  section form {
+    font-size: 0; }
+    section form div {
+      width: 4.25rem;
+      margin: 0 auto 0.15rem; }
+    section form label {
+      display: inline-block;
+      width: 2.1rem;
+      height: 0.5rem;
+      text-align: left;
+      text-indent: 0.25rem;
+      line-height: 0.5rem;
+      font-size: 0.275rem;
+      color: #bf0c21;
+      background: #e7c598;
+      margin-right: 0.0125rem;
+      border-radius: 0.125rem 0 0 0.125rem; }
+    section form input[type='text'] {
+      width: 2.1rem;
+      height: 0.5rem;
+      display: inline-block;
+      border: none;
+      background: #e7c598;
+      vertical-align: top;
+      text-indent: 0.125rem;
+      font-size: 0.275rem;
+      line-height: 0.5rem;
+      border-radius: 0 0.125rem 0.125rem 0; }
+    section form input[type='button'] {
+      width: 3.125rem;
+      height: 0.5625rem;
+      background: url(../img/submit.png) no-repeat;
+      background-size: 3.125rem 0.5625rem;
+      display: block;
+      margin: 0.5rem auto 0.25rem; }
+    section form p {
+      font-size: 0.225rem;
+      color: #e7c598;
+      text-align: center;
+      line-height: 0.375rem; }
+  section a {
+    display: block;
+    width: 0.625rem;
+    height: 0.625rem;
+    position: fixed;
+    bottom: 0.375rem;
+    right: 0.125rem;
+    background: url(../img/btnreturn.png) no-repeat;
+    background-size: 0.625rem 0.625rem; }
+
+.motai, .motai2, .motai3 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translateX(-100%);
+  background: rgba(106, 0, 1, 0.8);
+  z-index: 1;
+  transition: 200ms; }
+  .motai .box, .motai2 .box, .motai3 .box {
+    width: 5.1625rem;
+    height: 3.125rem;
+    background: #e7c598;
+    border-radius: 0.15rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    transition: 300ms;
+    transform: translateY(-300%); }
+    .motai .box h6, .motai2 .box h6, .motai3 .box h6 {
+      font-size: 0.5rem;
+      color: #bf0c21;
+      text-align: center;
+      line-height: 0.5625rem;
+      margin-top: 0.825rem;
+      margin-bottom: 0.375rem; }
+    .motai .box button, .motai2 .box button, .motai3 .box button {
+      display: block;
+      margin: 0.175rem auto 0;
+      width: 2.8rem;
+      height: 0.5rem;
+      color: #e7c598;
+      font-size: 0.275rem;
+      text-align: center;
+      line-height: 0.5rem;
+      background: #bf0c21;
+      border-radius: 0.125rem; }
+    .motai .box input:last-of-type, .motai2 .box input:last-of-type, .motai3 .box input:last-of-type {
+      width: 0.45rem;
+      height: 0.45rem;
+      border-radius: 50%;
+      position: absolute;
+      right: 0.2rem;
+      top: 0.15rem;
+      background: url(../img/btnclose.png) no-repeat;
+      background-size: 0.45rem 0.45rem; }
+
+.transition {
+  transform: translateX(0%);
+  z-index: 3; }
+  .transition .box_tran {
+    transform: translateY(0%); }
+
+/*# sourceMappingURL=from.css.map */

@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+@import "reset";
+
+@mixin img(){
+    width:100%;
+    height: 100%;
+    //vertical-align: top;
+}
+@mixin auto(){
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+$fontsize:40;
+@function r($px){
+    @return $px/(2*$fontsize) * 1rem;
+};
+html,body{
+    width: 100%;
+    height: 100%;
+     background: #bf0c21;
+};
+.web{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: url(../img/background.png) repeat;
+    background-size:r(640) r(1008) ;
+}
+button{
+    outline: none;
+}

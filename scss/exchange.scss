@@ -1,0 +1,115 @@
+@charset "utf-8";
+@import "common";
+.web{
+   overflow: hidden;
+   h3{
+       font-size: r(32);
+       color: #e7c598;
+       text-align: center;
+       margin-top: r(26);
+   }
+}
+section{
+   width: 100%;
+   left: 0;
+   top: 0;
+   bottom: 0;
+   position: absolute;
+   overflow-y: scroll;
+   background: url(../img/background.png) repeat;
+   background-size:r(640) r(1008) ;
+   z-index: 2;
+   p{
+       font-size: r(32);
+       color: #e7c598;
+       text-align: center;
+       margin-top: r(325);
+       margin-bottom: r(40);
+   }
+   #exchange{
+       width: r(330);
+       height: r(60);
+       border: none;
+       display: block;
+       margin: 0 auto;
+       font-size: r(30);
+       border-radius: r(8);
+       text-indent: r(12);
+       background: #e7c598;
+   }
+   #btn{
+        width: r(250);
+        height: r(45);
+        background: url(../img/sure.png) no-repeat;
+        background-size:r(250)  r(45);
+        display: block;
+        margin: r(80) auto 0;
+    }
+    a{
+        display: block;
+        width: r(41);
+        height: r(41);
+        position: fixed;
+        bottom: r(30);
+        right: r(30);
+        background: url(../img/btnreturn.png) no-repeat;
+        background-size:r(41) r(41) ;
+    }
+}
+.motai,.motai1{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateX(-100%);
+    background: rgba(106,0,1,.8);
+    z-index: 1;
+    transition: 200ms;
+    .box{
+        width: r(413);
+        height: r(250);
+        background: #e7c598;
+        border-radius: r(12);
+        @include auto();
+        transition: 300ms;
+        transform: translateY(-300%);
+        p{
+            font-size: r(40);
+            color: #bf0c21;
+            text-align: center;
+            line-height: r(80);
+            &:nth-child(1){
+                margin-top: r(80);
+            }
+        };
+        input:last-of-type{
+            width: r(36);
+            height: r(36);
+            border-radius: 50%;
+            position: absolute;
+            right: r(16);
+            top: r(12);
+            background: url(../img/btnclose.png) no-repeat;
+            background-size:r(36) r(36) ;
+        };
+        button{
+            width: r(222);
+            height: r(38);
+            border-radius: r(8);
+            background: #bf0c21;
+            color: #e7c598;
+            line-height: r(38);
+            text-align: center;
+            display: block;
+            margin: 0 auto r(50);
+        }
+    }
+}
+.transition{
+    transform: translateX(0%);
+    z-index: 3;
+    .box_tran{
+        transform: translateY(0%);
+    }
+}

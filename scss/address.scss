@@ -1,0 +1,70 @@
+@charset "utf-8";
+@import "common";
+.web{
+   overflow: hidden;
+}
+section{
+   width: 100%;
+   left: 0;
+   top: 0;
+   bottom: 0;
+   position: absolute;
+   overflow-y: scroll;
+   background: url(../img/background.png) repeat;
+   background-size:r(640) r(1008) ;
+
+   #container{
+       width:0;
+       height:0;
+       display: none;
+   };
+     #container1{
+       width:r(600);
+       height:r(600);
+       margin:r(80) auto 0;
+   };
+    .info-title{
+        color: white;
+        font-size: r(14);
+        background-color: rgba(0,155,255,0.8);
+        line-height: r(26);
+        padding: r(4) 0 r(4) 0;
+        font-weight: lighter;
+        letter-spacing: r(2)
+      }
+      .info-content{
+        padding: r(4);
+       
+        //line-height: r(23);
+       
+            font-size: r(14);
+            text-align: left; 
+            color: #666666;
+        
+      }
+      .info-content img{
+        height: r(90);
+//      float: left;
+        margin: r(3);
+      };
+      .amap-info{
+          width: r(360);
+      };
+   p{
+       font-size: r(36);
+       color: #e7c598;
+       text-align: center;
+       line-height: r(46);
+       margin-top: r(36);
+   }
+    a{
+        display: block;
+        width: r(41);
+        height: r(41);
+        position: fixed;
+        bottom: r(30);
+        right: r(30);
+        background: url(../img/btnreturn.png) no-repeat;
+        background-size:r(41) r(41) ;
+    }
+}

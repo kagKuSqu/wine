@@ -1,0 +1,189 @@
+@charset "UTF-8";
+/*RESET重置样式*/
+body, p, ul, ol, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, form, fieldset, legend, input, select, textarea, button, th, td, menu {
+  margin: 0;
+  padding: 0; }
+
+/**{box-sizing:border-box}*/
+ul, dl, ol {
+  list-style: none; }
+
+img, fieldset, input[type="submit"] {
+  border: 0 none; }
+
+em {
+  font-style: normal; }
+
+strong {
+  font-weight: normal; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+button, input[type="button"] {
+  cursor: pointer;
+  border: 0 none; }
+
+a, button, input, img {
+  -webkit-touch-callout: none; }
+
+img {
+  /*pointer-events:none;*/
+  /*禁止图片的点击事件，例如长按保存图片*/ }
+
+input, select, textarea {
+  outline: none; }
+
+a {
+  text-decoration: none; }
+
+.fl {
+  float: left; }
+
+.fr {
+  float: right; }
+
+.clear {
+  clear: both; }
+
+.clearfix {
+  zoom: 1; }
+
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both; }
+
+html, body {
+  /*禁止用户选择元素*/
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -khtml-user-select: none;
+  /*禁止元素点击出现半透明黑色背景*/
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+
+html {
+  height: 100%;
+  width: 100%;
+  font-family: 'Heiti SC', 'Microsoft YaHei';
+  outline: 0;
+  -webkit-text-size-adjust: none; }
+
+body {
+  height: 100%;
+  margin: 0;
+  position: relative; }
+
+html, body {
+  width: 100%;
+  height: 100%;
+  background: #bf0c21; }
+
+.web {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background: url(../img/background.png) repeat;
+  background-size: 8rem 12.6rem; }
+
+button {
+  outline: none; }
+
+.web {
+  overflow: hidden; }
+
+section {
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  overflow-y: scroll;
+  background: url(../img/background.png) repeat;
+  background-size: 8rem 12.6rem;
+  z-index: 2; }
+  section input {
+    width: 3.975rem;
+    height: 0.5625rem;
+    background: url(../img/1.png) no-repeat;
+    background-size: 3.975rem 0.5625rem;
+    display: block;
+    margin: 0.75rem auto 0; }
+  section .list, section .onehurnd {
+    width: 6.275rem;
+    height: 9.2rem;
+    margin: -0.025rem auto 0;
+    border: 0.025rem solid #e3b48d;
+    color: #e3b48d;
+    overflow-y: scroll; }
+    section .list li, section .onehurnd li {
+      width: 6.275rem;
+      height: 1.125rem;
+      line-height: 1.125rem;
+      font-size: 0;
+      border-bottom: 0.025rem solid #e3b48d; }
+      section .list li:nth-of-type(1) span:first-of-type, section .onehurnd li:nth-of-type(1) span:first-of-type {
+        background: url(../img/one.png) no-repeat;
+        background-size: 0.225rem 0.1375rem;
+        background-position: 0.2rem 0.225rem; }
+      section .list li:nth-of-type(2) span:first-of-type, section .onehurnd li:nth-of-type(2) span:first-of-type {
+        background: url(../img/two.png) no-repeat;
+        background-size: 0.225rem 0.1375rem;
+        background-position: 0.2rem 0.225rem; }
+      section .list li:nth-of-type(3) span:first-of-type, section .onehurnd li:nth-of-type(3) span:first-of-type {
+        background: url(../img/three.png) no-repeat;
+        background-size: 0.225rem 0.1375rem;
+        background-position: 0.2rem 0.225rem; }
+      section .list li span, section .onehurnd li span {
+        display: inline-block;
+        vertical-align: top;
+        text-align: center;
+        width: 0.625rem; }
+      section .list li span:first-of-type, section .onehurnd li span:first-of-type {
+        font-size: 0.35rem;
+        margin-left: 0.225rem; }
+      section .list li .name, section .onehurnd li .name {
+        font-size: 0.175rem;
+        margin-left: 0.225rem;
+        width: 2.5rem;
+        height: 1.125rem; }
+      section .list li div, section .onehurnd li div {
+        width: 0.825rem;
+        height: 0.825rem;
+        margin-top: 0.175rem;
+        border-radius: 50%;
+        margin-left: 0.25rem;
+        overflow: hidden;
+        display: inline-block; }
+        section .list li div img, section .onehurnd li div img {
+          width: 100%;
+          height: 100%;
+          vertical-align: top; }
+      section .list li p, section .onehurnd li p {
+        font-size: 0.275rem;
+        color: #e3b48d;
+        float: right;
+        margin-right: 0.2rem; }
+  section .onehurnd {
+    height: 1.125rem;
+    background: #e7c598;
+    color: #bf0c21;
+    width: 6.275rem;
+    overflow-y: hidden; }
+    section .onehurnd li:nth-of-type(1) span:first-of-type {
+      background: none; }
+    section .onehurnd li:nth-of-type(1) p {
+      color: #bf0c21; }
+  section a {
+    display: block;
+    width: 0.625rem;
+    height: 0.625rem;
+    position: fixed;
+    bottom: 0.375rem;
+    right: 0.125rem;
+    background: url(../img/btnreturn.png) no-repeat;
+    background-size: 0.625rem 0.625rem; }
+
+/*# sourceMappingURL=list.css.map */

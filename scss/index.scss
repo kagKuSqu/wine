@@ -1,0 +1,105 @@
+@charset "utf-8";
+@import "common";
+
+
+
+
+header{
+    width: r(206);
+    height: r(41);
+    position: absolute;
+    top: r(235);
+    left: r(216);
+    img{
+        @include img();
+    }
+}
+section{
+    width: r(378);
+    height: r(207);
+    position: absolute;
+    top: r(360);
+    left: r(130);
+    img{
+        @include img();
+    }
+}
+footer{
+    position: absolute;
+    top: r(624);
+    left: r(160);
+    input{
+        width: r(318);
+        height: r(46);
+        display: block;
+        background: url(../img/btn.png) no-repeat;
+        background-size:r(318) r(122); 
+        &:first-of-type{
+            background-position:left top; 
+        };
+         &:last-of-type{
+             margin-top: r(32);
+            background-position:left bottom;
+        };
+    }
+    
+        button{
+            display: block;
+            margin: r(32) auto 0;
+            width: r(318);
+            height: r(45);
+            background: url(../img/dui.png) no-repeat;
+            background-size:r(318) r(45); 
+            color: #da8770;
+            font-size: r(22);
+            text-align: center;
+            line-height: r(40);
+        }
+}
+.motai{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(106,0,1,.8);
+    .box{
+        width: r(413);
+        height: r(250);
+        background: #e7c598;
+        border-radius: r(12);
+        @include auto();
+        p{
+            font-size: r(22);
+            color: #bf0c21;
+            text-align: center;
+            line-height: r(32);
+            &:nth-child(1){
+                margin-top: r(44);
+            }
+        };
+        input:first-of-type{
+            width: r(195);
+            height: r(38);
+            background: #bf0c21;
+            line-height: r(38);
+            text-align: center;
+            font-size: r(20);
+            color: #e4b990;
+            border-radius: r(10);
+            margin: r(24) auto 0;
+            display: block;
+        };
+        input:last-of-type{
+            width: r(36);
+            height: r(36);
+            border-radius: 50%;
+            position: absolute;
+            right: r(16);
+            top: r(12);
+            background: url(../img/btnclose.png) no-repeat;
+            background-size:r(36) r(36) ;
+        }
+    }
+}
+

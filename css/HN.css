@@ -1,0 +1,186 @@
+@charset "UTF-8";
+/*RESET重置样式*/
+body, p, ul, ol, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, form, fieldset, legend, input, select, textarea, button, th, td, menu {
+  margin: 0;
+  padding: 0; }
+
+/**{box-sizing:border-box}*/
+ul, dl, ol {
+  list-style: none; }
+
+img, fieldset, input[type="submit"] {
+  border: 0 none; }
+
+em {
+  font-style: normal; }
+
+strong {
+  font-weight: normal; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+button, input[type="button"] {
+  cursor: pointer;
+  border: 0 none; }
+
+a, button, input, img {
+  -webkit-touch-callout: none; }
+
+img {
+  /*pointer-events:none;*/
+  /*禁止图片的点击事件，例如长按保存图片*/ }
+
+input, select, textarea {
+  outline: none; }
+
+a {
+  text-decoration: none; }
+
+.fl {
+  float: left; }
+
+.fr {
+  float: right; }
+
+.clear {
+  clear: both; }
+
+.clearfix {
+  zoom: 1; }
+
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both; }
+
+html, body {
+  /*禁止用户选择元素*/
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -khtml-user-select: none;
+  /*禁止元素点击出现半透明黑色背景*/
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+
+html {
+  height: 100%;
+  width: 100%;
+  font-family: 'Heiti SC', 'Microsoft YaHei';
+  outline: 0;
+  -webkit-text-size-adjust: none; }
+
+body {
+  height: 100%;
+  margin: 0;
+  position: relative; }
+
+html, body {
+  width: 100%;
+  height: 100%;
+  background: #bf0c21; }
+
+.web {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background: url(../img/background.png) repeat;
+  background-size: 8rem 12.6rem; }
+
+button {
+  outline: none; }
+
+.web {
+  overflow: hidden; }
+
+section {
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  overflow-y: scroll;
+  background: url(../img/background.png) repeat;
+  background-size: 8rem 12.6rem; }
+  section .GD {
+    width: 1.125rem;
+    height: 0.475rem;
+    background: url(../img/btn_GD.png) no-repeat;
+    background-size: 1.125rem 0.475rem;
+    position: absolute;
+    top: 0.475rem;
+    left: 0.6rem; }
+  section .HN {
+    width: 6.6875rem;
+    height: 5.1rem;
+    background: url(../img/HN.png) no-repeat;
+    background-size: 6.6875rem 5.1rem;
+    margin-left: 0.625rem;
+    margin-top: 1.15rem;
+    position: relative; }
+    section .HN .city1 {
+      left: 5rem;
+      top: -0.575rem; }
+    section .HN .city2 {
+      left: 2rem;
+      bottom: 0.75rem; }
+    section .HN div {
+      width: 0.8375rem;
+      height: 1.2125rem;
+      background: url(../img/add.png) no-repeat;
+      background-size: 100%;
+      color: #bf0c21;
+      position: absolute;
+      text-align: center; }
+      section .HN div p {
+        font-size: 0.175rem; }
+        section .HN div p:first-of-type {
+          padding-top: 0.175rem; }
+        section .HN div p span {
+          font-size: 0.25rem; }
+  @media screen and (max-width: 320px) {
+    section .HN .city1 {
+      left: 5rem;
+      top: -0.75rem; }
+    section .HN div {
+      width: 1rem;
+      height: 1.3625rem; } }
+  section .num {
+    position: relative;
+    top: -0.5rem; }
+    section .num p {
+      color: #e7c598;
+      font-size: 0.375rem;
+      text-align: right;
+      padding-right: 0.2625rem; }
+      section .num p:nth-of-type(1) span {
+        font-size: 0.5rem; }
+      section .num p:nth-of-type(2) {
+        font-size: 0.5rem; }
+  section .text {
+    width: 6.6375rem;
+    height: 3.975rem;
+    margin: 0 auto;
+    margin-top: -0.25rem; }
+    section .text img {
+      width: 100%;
+      height: 100%; }
+  section #btn {
+    width: 3.975rem;
+    height: 0.5625rem;
+    background: url(../img/from.png) no-repeat;
+    background-size: 3.975rem 0.5625rem;
+    display: block;
+    margin: 1rem auto 0; }
+  section a {
+    display: block;
+    width: 0.5125rem;
+    height: 0.5125rem;
+    margin-left: 6.8rem;
+    margin-top: -0.375rem;
+    margin-bottom: 0.275rem;
+    background: url(../img/btnreturn.png) no-repeat;
+    background-size: 0.5125rem 0.5125rem; }
+
+/*# sourceMappingURL=HN.css.map */

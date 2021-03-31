@@ -1,0 +1,301 @@
+@charset "utf-8";
+@import "common";
+.web{
+   overflow: hidden;
+   h3{
+       font-size: r(32);
+       color: #e7c598;
+       text-align: center;
+       margin-top: r(26);
+   };
+   .other{
+        font-size: r(26);
+         color: #e7c598;
+       text-align: center;
+        margin-top: r(86);
+        .other_num{
+            display: inline-block;
+            height: r(40);
+            width: r(40);
+            font-size: r(32);
+            color: orange;
+            border-bottom: r(1) solid #e7c598;
+        }
+   }
+}
+section{
+   width: 100%;
+   left: 0;
+   top: 0;
+   bottom: 0;
+   position: absolute;
+   overflow-y: scroll;
+   background: url(../img/background.png) repeat;
+   background-size:r(640) r(1008) ;
+   z-index: 2;
+
+   input{
+        width: r(318);
+        height: r(45);
+        background: url(../img/conq.png) no-repeat;
+        background-size:r(318)  r(45);
+        display: block;
+        margin: r(80) auto r(20);
+    }
+    a{
+        display: block;
+        width: r(41);
+        height: r(41);
+        position: fixed;
+        bottom: r(30);
+        right: r(30);
+        background: url(../img/btnreturn.png) no-repeat;
+        background-size:r(41) r(41) ;
+    }
+}
+   .seat{
+       width: r(390);
+       margin: 0 auto;
+       .table{
+           transition: all 300ms;
+           transform: scale(1) translateY(0%);
+       }
+       .owner{
+           .table{
+               
+               margin: r(90) auto 0;
+               width: r(122);
+               height: r(122);
+               border-radius:50% ;
+               background: #e7c598;
+               position: relative;
+               text-align: center;
+               line-height: r(122);
+               font-size: r(22);
+               color: #bf0c21;
+                box-shadow: r(2) r(1) #000000;
+               ul{
+                   li{
+                       width: r(48);
+                       height: r(48);
+                       border-radius:50% ;
+                       background: url(../img/person.jpg) no-repeat;
+                       overflow: hidden;
+                       background-size:100% 100%;
+                       position: absolute;
+                       box-shadow: r(2) r(1) #000000;
+                       &:nth-of-type(1){
+                           top: r(-56);
+                           left:r(38)
+                       };
+                        &:nth-of-type(2){
+                           top: r(-10);
+                           left:r(-45)
+                       };
+                        &:nth-of-type(3){
+                           top: r(84);
+                           left:r(-45)
+                       };
+                        &:nth-of-type(4){
+                           bottom: r(-56);
+                           left:r(38)
+                       };
+                        &:nth-of-type(6){
+                           top: r(-10);
+                           right:r(-45)
+                       };
+                        &:nth-of-type(5){
+                           top: r(84);
+                           right:r(-45)
+                       };
+                   }
+               }
+           }           
+       }
+       .person{
+          width: 50%;
+          float: left;
+           .table{
+               margin: r(110) auto 0;
+               width: r(86);
+               height: r(86);
+               border-radius:50% ;
+               background: #e7c598;
+               position: relative;
+               text-align: center;
+               line-height: r(86);
+               font-size: r(18);
+               color: #bf0c21;
+                box-shadow: r(2) r(1) #000000;
+               ul{
+                   li{
+                       width: r(35);
+                       height: r(35);
+                       border-radius:50% ;
+                       background: url(../img/person.jpg) no-repeat;
+                       overflow: hidden;
+                       background-size:100% 100%;
+                       position: absolute;
+                       box-shadow: r(2) r(1) #000000;
+                       &:nth-of-type(1){
+                           top: r(-42);
+                           left:r(26)
+                       };
+                        &:nth-of-type(2){
+                           top: r(-8);
+                           left:r(-33)
+                       };
+                        &:nth-of-type(3){
+                           top: r(60);
+                           left:r(-33)
+                       };
+                        &:nth-of-type(4){
+                           bottom: r(-42);
+                           left:r(26)
+                       };
+                        &:nth-of-type(6){
+                           top: r(-8);
+                           right:r(-33)
+                       };
+                        &:nth-of-type(5){
+                           top: r(60);
+                           right:r(-33)
+                       };
+                   }
+               }
+           }
+          .add{
+               background: url(../img/add.jpg) no-repeat;
+               background-size:100% ;
+          }
+       };
+
+   }
+.motai,.motai2,.motai3{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateX(-100%);
+    background: rgba(106,0,1,.8);
+    z-index: 1;
+    transition: 200ms;
+    .box{
+        width: r(413);
+        height: r(250);
+        background: #e7c598;
+        border-radius: r(12);
+        @include auto();
+        transition: 300ms;
+        transform: translateY(-300%);
+        p{
+            font-size: r(30);
+            color: #bf0c21;
+            text-align: center;
+            line-height: r(45);
+            &:nth-child(1){
+                margin-top: r(80);
+            }
+        };
+        h6{
+            font-size: r(30);
+            color: #bf0c21;
+            text-align: center;
+            line-height: r(45);
+            margin-top: r(26);
+        };
+        button{
+            display: block;
+            margin: r(14) auto 0;
+            width: r(224);
+            height: r(40);
+            color: #e7c598;
+            font-size: r(22);
+            text-align: center;
+            line-height: r(40);
+            background: #bf0c21;
+            border-radius: r(10);
+        }
+        .friend{
+             width: r(300);
+        }
+        input:last-of-type{
+            width: r(36);
+            height: r(36);
+            border-radius: 50%;
+            position: absolute;
+            right: r(16);
+            top: r(12);
+            background: url(../img/btnclose.png) no-repeat;
+            background-size:r(36) r(36) ;
+        }
+    }
+}
+.motai2{
+    .click{
+        width: 100%;
+        height: 100%;
+        background: transparent;
+    }
+    .info{
+        width: 100%;
+        position: absolute;
+        bottom: r(100);
+    }
+   h4{
+         font-size: r(26);
+         color: #e7c598;
+        text-align: center;
+//      margin-top: r(86);
+        .other_num{
+            display: inline-block;
+            padding: r(18);
+            padding-bottom: 0;
+            font-size: r(32);
+            color: orange;
+            border-bottom: r(2) solid #e7c598;
+        }
+   }
+    a{
+        display: block;
+        width: r(41);
+        height: r(41);
+        position: fixed;
+        bottom: r(30);
+        right: r(30);
+        background: url(../img/btnreturn.png) no-repeat;
+        background-size:r(41) r(41) ;
+    }
+}
+.motai3 .box{
+    h6{
+        font-size: r(36);
+        line-height: r(100);
+    }
+    button{
+        height: r(68);
+        line-height: r(30);
+    }
+}
+.transition{
+    transform: translateX(0%);
+    z-index: 3;
+    .box_tran{
+        transform: translateY(0%);
+    }
+}
+.seat .toBig1{
+    transform: scale(2.2); 
+}
+.seat .toBig{
+    transform: scale(2.8); 
+}
+.seat .toAuto{
+    float: none;
+    margin:r(400) auto 0;
+}
+.sec{
+    z-index: 998;
+    background: none;
+}
