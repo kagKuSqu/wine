@@ -1,4 +1,4 @@
-alert(111111)
+
 		var oBtn=document.getElementById('btn');
 		
 		var oTable=document.querySelectorAll('.table');
@@ -8,7 +8,6 @@ alert(111111)
 		var aLi=document.getElementsByTagName('li');
 		
 		oBtn.onclick=function(){
-			alert(1)
 			motai('.motai','close');
 		};
 		
