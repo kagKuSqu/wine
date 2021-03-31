@@ -71,7 +71,7 @@ var map1 = new AMap.Map('container1',{
 		     	}
 		     };
 		     oP.innerHTML = '您离最近的兑换点的距离约为:' + parseInt(arr[index]) + '米';
-		     map1.setZoomAndCenter(16, [JsonData[index].JD, JsonData[index].WD]);
+		     map1.setZoomAndCenter(18, [JsonData[index].JD, JsonData[index].WD]);
 	       var marker = new AMap.Marker({
 	       			map:map1,
 		            position: [JsonData[index].JD, JsonData[index].WD]

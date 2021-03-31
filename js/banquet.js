@@ -1,4 +1,4 @@
-
+alert(111111)
 		var oBtn=document.getElementById('btn');
 		
 		var oTable=document.querySelectorAll('.table');
