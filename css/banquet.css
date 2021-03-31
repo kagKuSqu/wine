@@ -264,7 +264,7 @@ section {
       text-align: center;
       line-height: 0.5625rem; }
       .motai .box p:nth-child(1), .motai2 .box p:nth-child(1), .motai3 .box p:nth-child(1) {
-        margin-top: 1rem; }
+        margin-top: 0.75rem; }
     .motai .box h6, .motai2 .box h6, .motai3 .box h6 {
       font-size: 0.375rem;
       color: #bf0c21;

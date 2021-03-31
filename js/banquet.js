@@ -8,6 +8,7 @@
 		var aLi=document.getElementsByTagName('li');
 		
 		oBtn.onclick=function(){
+			alert(1)
 			motai('.motai','close');
 		};
 		
