@@ -1,16 +1,21 @@
-var Swiper=new Swiper('.swiper-container',{
-	direction : 'vertical',
-    onInit: function(swiper){ //Swiper2.x的初始化是onFirstInit
-    swiperAnimateCache(swiper); //隐藏动画元素 
-    swiperAnimate(swiper); //初始化完成开始动画
-  }, 
-  	onSlideChangeEnd: function(swiper){ 
-    swiperAnimate(swiper); //每个slide切换结束时也运行当前slide动画
-  } 
-})
 
-var oMotai=document.querySelector('.motai');
-var oClose=document.getElementById('close');
-oClose.addEventListener('click',function(){
-	oMotai.style.display='none';
-})
+
+setTimeout(function(){
+	motai('.motai','close');
+},800)
+
+	function motai(mo,close){
+		var oMotai=document.querySelector(mo);
+		var oBox=oMotai.querySelector('.box');
+		var oBtn_close=document.getElementById(close);
+		
+			oMotai.classList.add('transition');
+			setTimeout(function(){
+				oBox.classList.add('box_tran');
+			},500);
+			
+		oBtn_close.onclick=function(){
+			oMotai.classList.remove('transition');
+			oBox.classList.remove('box_tran');
+		};	
+	}

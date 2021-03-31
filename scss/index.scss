@@ -61,14 +61,19 @@ footer{
     height: 100%;
     position: absolute;
     top: 0;
+    bottom: 0;
     left: 0;
     background: rgba(106,0,1,.8);
+    transform: translateX(-100%);
+    transition: 200ms;
     .box{
         width: r(413);
         height: r(250);
         background: #e7c598;
         border-radius: r(12);
         @include auto();
+        transition: 300ms;
+        transform: translateY(-300%);
         p{
             font-size: r(22);
             color: #bf0c21;
@@ -103,3 +108,10 @@ footer{
     }
 }
 
+.transition{
+    transform: translateX(0%);
+    z-index: 3;
+    .box_tran{
+        transform: translateY(0%);
+    }
+}

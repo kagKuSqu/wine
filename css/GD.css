@@ -91,6 +91,12 @@ html, body {
 button {
   outline: none; }
 
+input {
+  border: 0;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none; }
+
 .web {
   overflow: hidden; }
 
