@@ -63,7 +63,7 @@ var map1 = new AMap.Map('container1',{
 				 var juli = lnglat.distance([JsonData[i].JD, JsonData[i].WD]);
 				 arr.push(juli);
 		     }
-		     var Min=Math.min(...arr);
+		     var Min=Math.min.apply(null,arr);
 		     var index=0;
 		     for(var i=0;i<arr.length;i++){
 		     	if(arr[i] == Min){
