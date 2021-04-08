@@ -71,7 +71,8 @@
 			var oInput_tel=document.getElementById('tel');
 			var reg_tel=/^(13\d{9})|(15[^4]\d{8})|(17[0|6-8])\d{8}|(18[0-8]\d{8})$/;
 			var reg_name=/\w/;
-			oButton.onclick=function(){
+			oButton.onclick=function(ev){
+				ev.preventDefault();
 				if(reg_name.test(oInput_name.value)){
 					alert('您输入的姓名含有非法字符,请重新输入');
 					oInput_name.value='';
