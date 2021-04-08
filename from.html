@@ -31,6 +31,7 @@
 					<p>并在2016年10月1日--10月7日举办婚宴的新人</p>
 					<p>(限广东省、海南省区域)才能入榜噢!</p>
 					<input type="button" value="" id="btn"/>
+					<button id="button">验证</button>
 				</form>
 				<div class="motai">
 					<div class="box" >
@@ -65,6 +66,25 @@
 					oBox.classList.remove('box_tran');
 				};	
 		}
+			var oButton=document.getElementById('button');
+			var oInput_name=document.getElementById('name');
+			var oInput_tel=document.getElementById('tel');
+			var reg_tel=/^(13\d{9})|(15[^4]\d{8})|(17[0|6-8])\d{8}|(18[0-8]\d{8})$/;
+			var reg_name=/\w/;
+			oButton.onclick=function(){
+				if(reg_name.test(oInput_name.value)){
+					alert('您输入的姓名含有非法字符,请重新输入');
+					oInput_name.value='';
+				}else{
+					alert('姓名登记成功');
+				};
+				 if(!reg_tel.test(oInput_tel.value)){
+					alert('您输入的号码有误,请重新输入');
+					oInput_tel.value='';
+				}else{
+					alert('号码登记成功');
+				}
+			};
 	</script>
 </html>
 

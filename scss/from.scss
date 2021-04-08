@@ -65,6 +65,18 @@ section{
         text-align: center;
         line-height: r(30);
       }
+      button{
+            display: block;
+            margin: r(32) auto 0;
+            width: r(318);
+            height: r(45);
+            background: url(../img/dui.png) no-repeat;
+            background-size:r(318) r(45); 
+            color: #da8770;
+            font-size: r(22);
+            text-align: center;
+            line-height: r(40);
+        }
    }
     a{
         display: block;
